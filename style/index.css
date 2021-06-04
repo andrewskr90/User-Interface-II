@@ -1,1 +1,227 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    border:1px solid grey;
+}*/
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:#4f4f4f;
+    line-height:1.5;
+    padding:1% .5%;
+}
+#h1{
+    font-size:5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:1%;
+}
+h2{
+    font-size:3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:.5%;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    background:#d6aef4;
+}
+nav{
+    display:flex;
+}
+#top nav a{
+    padding:5% 2%;
+    width:5%;
+    margin:2% 5%;
+    border-radius: 50%;
+}
+.intro{
+    display:flex;
+}
+.intro .left{
+    width:48.5%;
+    margin:1% .5% .5% .5%;
+    border-radius:20px;
+}
+.intro .right{
+    margin: 1% .5% 1% .5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+.intro .right h2{
+    margin:5% 0 0 0;
+}
+.intro .right button{
+    padding:5% 15%;
+    background-color:#B0E8FF;
+    border:none;
+    border-radius:50%;
+    margin:2% 0;
+    color:white;
+}
+.intro .right p{
+    text-align:center;
+    margin:0 10% 20% 10%;
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+}
+.gallery div{
+    width:23.75%;
+    height:23.75vw;
+    margin:.5%;
+    border-radius:20px;
+}
+
+.img1{
+    background-image:url("../images/beach.jpeg");
+    background-position:50% 100%;
+    background-size:200%;
+}
+.img2{
+    background-image:url('../images/blanket.jpeg');
+    background-position:50% 10%;
+    background-size:180%;
+}
+.img3{
+    background-image:url('../images/coffee.jpeg');
+    background-position:70% 40%;
+    background-size:160%;
+}
+.img4{
+    background-image:url('../images/gull.jpeg');
+    background-position:50% 70%;
+    background-size:180%
+}
+.img5{
+    background-image:url('../images/peak.jpeg');
+    background-size:160%;
+    background-position:70% 50%;
+}
+.img6{
+    background-image:url('../images/project-47-32.jpeg');
+    background-size:100%
+}
+.img7{
+    background-image:url('../images/trigeminal-nervous-system.jpeg');
+    background-size:100%;
+    background-position:60%;
+}
+.img8{
+    background-image:url('../images/wades-wedding-party.jpeg');
+    background-size:146%;
+    background-position:30%;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+footer h2{
+    text-align:center;
+}
+footer button{
+    padding:1%;
+    margin:1%;
+    width:10%;
+    font-family: 'Josefin Sans', sans-serif;
+    border:none;
+    border-radius: 50%
+}
+footer nav{
+    display:flex;
+    justify-content:space-evenly;
+}
+footer nav a{
+    text-decoration:none;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:2% 5%;
+    margin:3%;
+    border-radius:50%;
+}
+
+/*footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:20vw;
+}
+footer h2{
+    text-align:center;
+}
+footer button{
+    padding:5% 15%;
+    background-color:#B0E8FF;
+    border:none;
+    border-radius:50%;
+    margin:5% 40%;
+    
+}
+footer nav{
+    display:flex;
+    justify-content: space-between;
+}
+footer nav a{
+    padding:1% 5%;
+    width:1%;
+    border-radius: 50%;
+    text-align:center;
+
+
+
+/*.gallery img{
+    width:23.75%;
+    height:same-as-w
+    padding:.5%;
+    object-fit:cover;
+}
+*/

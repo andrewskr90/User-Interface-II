@@ -38,13 +38,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/**{
+*{
     box-sizing: border-box;
     margin:0;
     padding:0;
     max-width:100%;
     border:1px solid grey;
-}*/
+}
 /*General Styles*/
 html{
     font-size:62.5%;
@@ -55,10 +55,10 @@ body{
     line-height:1.5;
     padding:1% .5%;
 }
-#h1{
-    font-size:5rem;
+h1{
+    font-size:4.5rem;
     font-family: 'Josefin Sans', sans-serif;
-    padding:1%;
+    padding:1% 1% 1% 5%;
 }
 h2{
     font-size:3.5rem;
@@ -73,33 +73,44 @@ nav a{
 }
 nav{
     display:flex;
+    justify-content:space-evenly;
+    margin:auto;
+    
 }
-#top nav a{
-    padding:5% 2%;
-    width:5%;
-    margin:2% 5%;
-    border-radius: 50%;
+
+/*Header section styles*/
+nav.top a{
+
+    padding:2% 3%;
+    border-radius:50%;
 }
+
+/*Intro section styles*/
 .intro{
     display:flex;
 }
 .intro .left{
-    width:48.5%;
+    background-image:url('../images/crocodile.jpeg');
+    background-size:cover;
+    background-position:65%;
+    width:50%;
     margin:1% .5% .5% .5%;
     border-radius:20px;
 }
 .intro .right{
-    margin: 1% .5% 1% .5%;
+    width:50%;
+    margin: 1% .5% .5% .5%;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
+    border-radius:20px;
 }
 .intro .right h2{
     margin:5% 0 0 0;
 }
 .intro .right button{
-    padding:5% 15%;
+    padding:2% 5%;
     background-color:#B0E8FF;
     border:none;
     border-radius:50%;
@@ -110,13 +121,15 @@ nav{
     text-align:center;
     margin:0 10% 20% 10%;
 }
+
+/*Gallery section styles*/
 .gallery{
     display:flex;
     flex-wrap:wrap;
 }
 .gallery div{
-    width:23.75%;
-    height:23.75vw;
+    width:24%;
+    height:24vw;
     margin:.5%;
     border-radius:20px;
 }
@@ -160,68 +173,91 @@ nav{
     background-size:146%;
     background-position:30%;
 }
-footer{
+
+/*Footer section styles*/
+.footer.container{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
-footer h2{
-    text-align:center;
-}
-footer button{
+.footer button{
     padding:1%;
     margin:1%;
-    width:10%;
     font-family: 'Josefin Sans', sans-serif;
     border:none;
-    border-radius: 50%
+    border-radius: 50%;
+    font-size:2rem;
 }
-footer nav{
+.footer.container div{
     display:flex;
-    justify-content:space-evenly;
+    justify-content: center;
+    width:50%;
 }
-footer nav a{
+.footer.container div nav{
+    width:100%;
+}
+.footer div nav a{
     text-decoration:none;
     color:white;
     font-family: 'Josefin Sans', sans-serif;
-    padding:2% 5%;
+    padding:2% 3%;
     margin:3%;
     border-radius:50%;
 }
 
-/*footer{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    height:20vw;
-}
-footer h2{
-    text-align:center;
-}
-footer button{
-    padding:5% 15%;
-    background-color:#B0E8FF;
-    border:none;
-    border-radius:50%;
-    margin:5% 40%;
-    
-}
-footer nav{
-    display:flex;
-    justify-content: space-between;
-}
-footer nav a{
-    padding:1% 5%;
-    width:1%;
-    border-radius: 50%;
-    text-align:center;
+/*Max width media queries*/
 
-
-
-/*.gallery img{
-    width:23.75%;
-    height:same-as-w
-    padding:.5%;
-    object-fit:cover;
+/*max width 800px*/
+@media (max-width:800px) {
+    h1{
+        text-align:center;
+    }
+    .intro{
+        flex-direction:column;
+        align-items:center;
+        font-size:
+    }
+    .intro .left{
+        width:96%;
+        height:50vw;
+    }
+    .intro .right{
+        width:96%;
+        HEIGHT:40vw;
+    }
+    .gallery div{
+        width:48%;
+    height:48vw;
+    }
 }
-*/
+/*max-width 500px*/
+@media (max-width:500px){
+    h1{
+        max-width:auto;
+    }
+    nav{
+        max-width:auto;
+        padding:2% 0;
+
+    }
+    nav a{
+        font-size:1.5rem;
+    }
+    .intro .right{
+        height:50vw;
+    }
+    .intro .right h2{
+        margin:0% 0 0 0;
+    }
+    .intro .right p{
+        text-align:center;
+        font-size:1.5rem;
+
+    }
+    .footer.container div{
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+
+}
